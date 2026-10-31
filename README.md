@@ -167,19 +167,3 @@ Visit the application at:
 ```
 http://localhost/studenthub/
 ```
-
----
-
-## 5. Viva Examination Reference (Practical 2 to 15)
-
-1. **Practical 2 (Semantic Elements):** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>` describe their semantic meaning to browsers and screen readers, ensuring high accessibility (WCAG) and search engine readability.
-2. **Practical 3 (CSS Layouts):** Uses native **CSS Grid** for two-dimensional fluid layouts (dashboards, cards) and **Flexbox** for one-dimensional layouts (navbars, controls), adapting across desktop, tablet, and mobile screens via `@media` queries without external frameworks.
-3. **Practical 4 (DOM Manipulation & Theme):** Interactivity utilizes `classList.toggle()`, event listeners (`click`, `keydown`), and `localStorage.setItem('studenthub_theme', ...)` for theme persistence.
-4. **Practical 5 & 9 (Form Validation & Security):** Client-side regex checks provide immediate UX feedback; server-side regex validation, input sanitization (`filter_var`), duplicate checks, and BCrypt password hashing (`password_hash()`) guarantee security against tampering.
-5. **Practical 6 & 13 (Fetch API & REST JSON):** Data is requested asynchronously using `fetch()`, parsed as JSON, and dynamically inserted into the DOM without full-page reloads.
-6. **Practical 8 & 9 (Prepared Statements):** Using prepared statements (`$stmt->prepare()` and `$stmt->bind_param()`) cleanly separates SQL query structure from user parameters, preventing **SQL Injection (SQLi)** attacks.
-7. **Practical 10 (Authentication & Sessions):** Verifies passwords with `password_verify()`, regenerates session IDs via `session_regenerate_id(true)` to defeat **Session Fixation**, and enforces role-based access control.
-8. **Practical 11 & 12 (CRUD Operations):** Administrative tools perform Create, Read, Update, and Delete operations on students and events with image MIME type (`image/jpeg`, `image/png`, `image/webp`, `image/svg+xml`) and file size validation.
-9. **Practical 14 (Admin Dashboard & Auditing):** Queries real-time counts from `students`, `events`, and `registrations`, while recording critical administrative actions in the `audit_logs` table.
-10. **Practical 15 (Final Integration):** Combines all layers into a unified, responsive, and robust university web application running smoothly on local XAMPP.
-
